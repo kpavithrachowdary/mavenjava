@@ -1,3 +1,8 @@
+docker build -t imag_name .
+docker run -d -p 80:80 imag_name
+docker tag imag_name username/imag_name
+docker push username/imag_name
+docker pull username/imag_name
 role rolename="admin-gui,manager-gui ,manager-script,manager-jmx,manager-status"/><user
  password="1234" roles="manager-gui, admin-gui ,manager-script" username="admin"/>
 pipeline {
