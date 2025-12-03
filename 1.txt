@@ -1,3 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users>
+   <role rolename="manager-gui"/>
+   <role rolename="manager-script"/>
+   <role rolename="admin-gui"/>
+   <user password="admin123" roles="manager-gui,manager-script,admin-gui" username="admin"/>
+   
+</tomcat-users>
 docker build -t imag_name .
 docker run -d -p 80:80 imag_name
 docker tag imag_name username/imag_name
